@@ -1,4 +1,7 @@
 
+I'd like to use this aricle on `gulp` to simplify my watch tasks:
+
+* http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903
 
 ```
 npm install --save-dev gulp-streamify;
