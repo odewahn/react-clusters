@@ -1,4 +1,15 @@
-var React = require('react')
+var React = require('react');
+const Card = require('material-ui/lib/card/card');
+const CardActions = require('material-ui/lib/card/card-actions');
+const CardExpandable = require('material-ui/lib/card/card-expandable');
+const CardHeader = require('material-ui/lib/card/card-header');
+const CardMedia = require('material-ui/lib/card/card-media');
+const CardText = require('material-ui/lib/card/card-text');
+const CardTitle = require('material-ui/lib/card/card-title');
+const FlatButton = require('material-ui/lib/flat-button');
+const Avatar = require('material-ui/lib/avatar');
+
+
 
 module.exports = React.createClass({
 
@@ -12,37 +23,25 @@ module.exports = React.createClass({
       }
       return out;
     }
-
     return (
-      <div class="clusterCard" id="{this.props.DockerHost}">
-        <table>
-          <tr>
-            <th>Host:</th>
-            <td>{this.props.data.DockerHost}</td>
-          </tr>
-          <tr>
-            <th>Name</th>
-            <td>{this.props.data.Name}</td>
-          </tr>
-          <tr>
-            <th>Populated By</th>
-            <td>{this.props.data.PopulatedBy}</td>
-          </tr>
-          <tr>
-            <th>CA Cert</th>
-            <td>{shorten(this.props.data.TLSCaCert,25)}</td>
-          </tr>
-          <tr>
-            <th>Cert</th>
-            <td>{shorten(this.props.data.TLSCert,25)}</td>
-          </tr>
-          <tr>
-            <th>Key</th>
-            <td>{shorten(this.props.data.TLSKey,25)}</td>
-          </tr>
-        </table>
-        <hr/>
-      </div>
+      <Card>
+        <CardHeader
+          title={this.props.data.Name}
+          subtitle={this.props.data.DockerHost}
+          avatar={<Avatar>A</Avatar>} />
+          <CardText>
+            <ul>
+              <li><em>Populated By</em>: {this.props.data.PopulatedBy} </li>
+              <li><em>CA Cert</em>: {shorten(this.props.data.TLSCaCert,25)} </li>
+              <li><em>Cert</em>: {shorten(this.props.data.TLSCert,25)} </li>
+              <li><em>Key</em>: {shorten(this.props.data.TLSKey,25)} </li>
+            </ul>
+          </CardText>
+          <CardActions>
+            <FlatButton label="Set As Default"/>
+            <FlatButton label="Delete"/>
+          </CardActions>
+      </Card>
     )
   }
 });
