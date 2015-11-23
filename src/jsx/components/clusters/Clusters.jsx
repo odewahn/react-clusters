@@ -1,14 +1,14 @@
 var React = require('react')
 var ClusterCard = require('./ClusterCard')
 
-module.exports = React.class({
+module.exports = React.createClass({
   getDefaultProps: function(){
     return {
       clusters: {
         "DefaultCluster": "Carina Analysis cluster",
         "ClusterList": [
           {
-            "Doc kerHost": "tcp:\/\/104.130.0.60:2376",
+            "DockerHost": "tcp:\/\/104.130.0.60:2376",
             "Name": "Carina Analysis cluster",
             "PopulatedBy": "carina",
             "TLSCaCert": "",
@@ -26,7 +26,7 @@ module.exports = React.class({
           {
             "DockerHost": "127.0.0.1:2376",
             "Name": "boot2docker on localhost",
-            "PopulatedBy": "launchbot",
+            "PopulatedBy": "carina",
             "TLSCaCert": "",
             "TLSCert": "",
             "TLSKey": ""
