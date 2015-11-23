@@ -1,5 +1,5 @@
 var React = require('react')
-var Clusters = require('./components/Clusters')
+var Clusters = require('./components/clusters/Clusters.jsx')
 
 React.render(
   <Clusters />,
