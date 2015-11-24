@@ -25,6 +25,30 @@ module.exports = React.createClass({
             "TLSKey": "\/Users\/odewahn\/.carina\/clusters\/aodewahn\/test2\/key.pem"
           },
           {
+            "DockerHost": "tcp:\/\/172.99.79.166:2376",
+            "Name": "Carina Personal cluster",
+            "PopulatedBy": "carina",
+            "TLSCaCert": "\/Users\/odewahn\/.carina\/clusters\/aodewahn\/test2\/ca-key.pem",
+            "TLSCert": "\/Users\/odewahn\/.carina\/clusters\/aodewahn\/test2\/cert.pem",
+            "TLSKey": "\/Users\/odewahn\/.carina\/clusters\/aodewahn\/test2\/key.pem"
+          },
+          {
+            "DockerHost": "tcp:\/\/172.99.79.166:2376",
+            "Name": "Carina Personal cluster",
+            "PopulatedBy": "carina",
+            "TLSCaCert": "\/Users\/odewahn\/.carina\/clusters\/aodewahn\/test2\/ca-key.pem",
+            "TLSCert": "\/Users\/odewahn\/.carina\/clusters\/aodewahn\/test2\/cert.pem",
+            "TLSKey": "\/Users\/odewahn\/.carina\/clusters\/aodewahn\/test2\/key.pem"
+          },
+          {
+            "DockerHost": "tcp:\/\/172.99.79.166:2376",
+            "Name": "Carina Personal cluster",
+            "PopulatedBy": "carina",
+            "TLSCaCert": "\/Users\/odewahn\/.carina\/clusters\/aodewahn\/test2\/ca-key.pem",
+            "TLSCert": "\/Users\/odewahn\/.carina\/clusters\/aodewahn\/test2\/cert.pem",
+            "TLSKey": "\/Users\/odewahn\/.carina\/clusters\/aodewahn\/test2\/key.pem"
+          },
+          {
             "DockerHost": "127.0.0.1:2376",
             "Name": "boot2docker on localhost",
             "PopulatedBy": "launchbot",
@@ -39,14 +63,22 @@ module.exports = React.createClass({
   render: function() {
     var clusterList = this.props.clusters.ClusterList.map(function(c){
       return (
-        <ClusterCard data={c}></ClusterCard>
+        <div className="col-lg-6">
+          <div className="box">
+            <ClusterCard data={c}></ClusterCard>
+          </div>
+        </div>
       )
     });
 
     return (
       <div id="clusterList">
         <h3>Here are some clusters!</h3>
-        {clusterList}
+        <div className="container-fluid">
+          <div className="row">
+            {clusterList}
+          </div>
+        </div>
       </div>
     )
   }
