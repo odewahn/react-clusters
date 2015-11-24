@@ -24,20 +24,22 @@ module.exports = React.createClass({
       return out;
     }
     return (
-      <Card>
+      <Card initiallyExpanded={false}>
         <CardHeader
           title={this.props.data.Name}
-          subtitle={this.props.data.DockerHost}
+          subtitle={this.props.data.PopulatedBy}
+          actAsExpander={true}
+          showExpandableButton={true}
           avatar={<Avatar>A</Avatar>} />
-          <CardText>
+          <CardText expandable={true}>
             <ul>
-              <li><em>Populated By</em>: {this.props.data.PopulatedBy} </li>
+              <li><em>Host:</em> {this.props.data.DockerHost} </li>
               <li><em>CA Cert</em>: {shorten(this.props.data.TLSCaCert,25)} </li>
               <li><em>Cert</em>: {shorten(this.props.data.TLSCert,25)} </li>
               <li><em>Key</em>: {shorten(this.props.data.TLSKey,25)} </li>
             </ul>
           </CardText>
-          <CardActions>
+          <CardActions expandable={false}>
             <FlatButton label="Set As Default"/>
             <FlatButton label="Delete"/>
           </CardActions>

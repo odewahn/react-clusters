@@ -16,4 +16,11 @@ npm install --save-dev reactify;
 npm install --save-dev gulp;
 npm install --save-dev gulp-connect
 npm install --save react;
+npm install --save material-ui;
+npm install --save material-ui;
+npm install --save react-tap-event-plugin
 ```
+
+
+// https://www.google.com/design/icons/
+// http://material-ui.com/#/home
