@@ -1,5 +1,5 @@
 
-I'd like to use this aricle on `gulp` to simplify my watch tasks:
+I'd like to use this article on `gulp` to simplify my watch tasks:
 
 * http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903
 
@@ -21,6 +21,14 @@ npm install --save react-tap-event-plugin
 ```
 
 
-// https://github.com/google/material-design-icons
-// http://google.github.io/material-design-icons/
-// http://material-ui.com/#/home
+* https://github.com/google/material-design-icons
+* http://google.github.io/material-design-icons/
+* http://material-ui.com/#/home
+* https://github.com/STRML/react-grid-layout
+
+//Ssome links about material design lite, which has the components but also a grid system
+
+* https://github.com/google/material-design-lite
+
+* http://quaintous.com/2015/07/09/react-components-with-mdl/
+* http://www.getmdl.io/templates/dashboard/index.html
