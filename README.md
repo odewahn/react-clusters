@@ -17,10 +17,10 @@ npm install --save-dev gulp;
 npm install --save-dev gulp-connect
 npm install --save react;
 npm install --save material-ui;
-npm install --save material-ui;
 npm install --save react-tap-event-plugin
 ```
 
 
-// https://www.google.com/design/icons/
+// https://github.com/google/material-design-icons
+// http://google.github.io/material-design-icons/
 // http://material-ui.com/#/home

@@ -1,8 +1,8 @@
 var React = require('react')
 var ClusterCard = require('./ClusterCard')
 
-
 module.exports = React.createClass({
+
   getDefaultProps: function(){
     return {
       clusters: {

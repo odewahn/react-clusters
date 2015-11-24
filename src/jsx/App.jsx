@@ -1,11 +1,19 @@
-var React = require('react')
-var Clusters = require('./components/clusters/Clusters')
+(function() {
 
-var injectTapEventPlugin = require("react-tap-event-plugin");
+  var React = require('react')
+  var Clusters = require('./components/clusters/Clusters')
 
-injectTapEventPlugin();
+  //Needed for React Developer Tools
+  window.React = React;
 
+  var injectTapEventPlugin = require("react-tap-event-plugin");
 
-React.render(
-  <Clusters />,
-  document.getElementById('app'));
+  //Needed for onTouchTap
+  //Can go away when react 1.0 release
+  //Check this repo:
+  //https://github.com/zilverline/react-tap-event-plugin
+  injectTapEventPlugin();
+
+  React.render(<Clusters />, document.getElementById('app'));
+
+})();
