@@ -9,8 +9,6 @@ const CardTitle = require('material-ui/lib/card/card-title');
 const FlatButton = require('material-ui/lib/flat-button');
 const Avatar = require('material-ui/lib/avatar');
 
-
-
 module.exports = React.createClass({
 
   render: function(){

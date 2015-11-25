@@ -29,6 +29,16 @@ gulp.task('copy', function(){
     .pipe(gulp.dest(path.DEST));
 });
 
+gulp.task('browserify', function(){
+  var b = browserify();
+  b.transform(reactify); // use the reactify transform
+  b.add('./src/jsx/App.jsx');
+  return b.bundle()
+    .pipe(source('./src/jsx/App.jsx'))
+    .pipe(gulp.dest('./public/bundle.js'));
+});
+
+
 gulp.task('watch', function() {
   gulp.watch(path.HTML, ['copy']);
 
