@@ -20,9 +20,8 @@ module.exports = React.createClass({
         <br/>
         <RaisedButton
           secondary={false}
-          label="New Credential">
-          <FontIcon className="material-icons">ic_add_circle</FontIcon>
-
+          label="New"
+          >
         </RaisedButton>
       </div>
     )

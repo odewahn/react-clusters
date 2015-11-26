@@ -16,11 +16,7 @@ module.exports = React.createClass({
             <div className="col-sm-12">
               <AppBar
                 title={<span>Launchbot</span>}
-                iconElementRight={
-                     <div>
-                       <FlatButton label="Clusters" />
-                       <FlatButton label="Settings"/>
-                      </div>} />
+                iconElementRight={<FlatButton label="Clusters" />} />
             </div>
           </div>
           <div className="row">
