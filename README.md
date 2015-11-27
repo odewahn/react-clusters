@@ -22,6 +22,18 @@ npm install --save react-tap-event-plugin
 ```
 
 
+
+# Flux
+
+I should just bite the bullet:
+
+https://github.com/facebook/flux
+
+# Material UI
+
+This is a cheating way to get a UI design.
+
+
 * https://github.com/google/material-design-icons
 * http://google.github.io/material-design-icons/
 * http://material-ui.com/#/home
